@@ -1,0 +1,79 @@
+UnoCard
+
+//get the color of the card 
++getColor(): String 
+
+//set the color of the card 
++setColor(): String
+
+//get value of the card 
++getValue(): String
+
+//set value of the card 
++setValue(): String
+
+//get score of the card
++getScore(): String
+
+//set score of the card 
++setScore(): String
+
+
+Player
+
+//get cards in hand
++getHand[]: list; String
+
+//set cards in hand
++setHand
+
+//skip user turn
++pass
+
+//match player's card to card from deck 
++match
+playerCard == showDeckCard
+
+
+cardDeck
+
+//set cards in deck
++setDeck[]: list
+
+//get cards in deck 
++getDeck[]: list
+
+//shuffle cards
++shuffleCards[]: random list
+
+//get a card from the deck
++pickCard(): String
+
+//show the play card
++showDeckCard(): String
+
+//discard the play card
++discardedCard(): String
+
+system
+
+//get players 
++getPlayers(): List;
+
+//set players
++setPlayers(): String;
+
+//get drawpile
++getDrawpile(): String;
+
+//set drawpile
++setDrawpile(): Stringl;
+
+//get discard pile
++getDiscardPile(): String;
+
+//set discard pile
++setDiscardPile(): String;
+
+
+
