@@ -11,7 +11,7 @@ public class UnoCard {
 	}
 
 	enum Value {
-		Zero, One, Two, Three, Four, Five, Six, Seven, Eight, Nine, Wild, Reverse, DrawTwo, DrawFour;
+		Zero, One, Two, Three, Four, Five, Six, Seven, Eight, Nine, Wild, Wild_Four, Skip, Reverse, DrawTwo, DrawFour;
 
 		private static final Value[] values = Value.values();
 

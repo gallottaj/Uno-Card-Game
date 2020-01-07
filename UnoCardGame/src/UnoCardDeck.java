@@ -15,10 +15,18 @@ public class UnoCardDeck {
 			UnoCard.Color color = colors[i];
 
 			cards[cardsInDeck++] = new UnoCard(color, UnoCard.Value.getValue(0));
-			for (int j = 1; j < 10; j++) {
-				cards[cardsInDeck++] = new UnoCard(color, UnoCard.Value.getValue(j));
-				cards[cardsInDeck++] = new UnoCard(color, UnoCard.Value.getValue(j));
+			for (int t = 1; t < 10; t++) {
+				cards[cardsInDeck++] = new UnoCard(color, UnoCard.Value.getValue(t));
+				cards[cardsInDeck++] = new UnoCard(color, UnoCard.Value.getValue(t));
 			}
+			// create UnoCard.Value.Skip
+			UnoCard.Value[] values = new UnoCard.Value[] { UnoCard.Value.DrawTwo, UnoCard.Value.Reverse };
+			for (UnoCard.Value value : values) {
+				cards[cardsInDeck++] = new UnoCard(color, value);
+				cards[cardsInDeck++] = new UnoCard(color, value);
+			}
+			//create wildcards
+			UnoCard.Value[] values = new UnoCard.Value[] { UnoCard.Value.Wild, UnoCard.Value.Wild_Four };
 
 		}
 	}
