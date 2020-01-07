@@ -25,7 +25,7 @@ public class UnoCard {
 	private static Color color;
 	private static Value value;
 
-	public void UnoCard(final Color color, final Value value) {
+	public UnoCard(final Color color, final Value value) {
 		this.color = color;
 		this.value = value;
 	}
